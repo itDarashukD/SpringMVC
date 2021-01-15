@@ -1,7 +1,9 @@
 package com.doroshuk.spring.mvc.contrillers;
 
+import com.doroshuk.spring.mvc.Entity.Employee;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -16,17 +18,18 @@ public class FirstController {
      return "firstView";
     }
 
-    @RequestMapping("/askDetails")
-    public String askDetails(){
+    @RequestMapping("employee")
+    public String askDetails(Model model){
+        model.addAttribute("employeeAtribute",new Employee());
 
         return "askDetails";
     }
 
-    @RequestMapping("/showDetails")
-    public String showDetails(@RequestParam("employeeName") String  oldNameFromRequest
-            , Model model){
-        String newNameForShowDetails="Mr.  "+oldNameFromRequest + " !";
-        model.addAttribute("nameAttribute",newNameForShowDetails);
+    @RequestMapping("showDetails")
+    public String showDetails(@ModelAttribute("employeeAtribute") Employee employee ){
+
+
+
 
         return "showDetails";
     }
