@@ -18,6 +18,8 @@ public class FirstController {
      return "firstView";
     }
 
+
+
     @RequestMapping("employee")
     public String askDetails(Model model){
         model.addAttribute("employeeAtribute",new Employee());

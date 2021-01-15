@@ -11,6 +11,8 @@
 
  <form:form action="showDetails" modelAttribute="employeeAtribute">
 
+
+
   Enter name   <form:input path="name"/>
      <br> <br>
   Enter surname    <form:input path="surname"/>
