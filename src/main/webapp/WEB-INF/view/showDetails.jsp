@@ -7,6 +7,8 @@
     yourSurname  ${employeeAtribute.surname}
     <br>
     yourSalary ${employeeAtribute.salary}
+    <br>
+    yourDepartment ${employeeAtribute.department}
 
 
 <body>

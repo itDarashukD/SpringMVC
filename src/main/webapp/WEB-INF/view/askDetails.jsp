@@ -17,6 +17,16 @@
      <br> <br>
   Enter salary   <form:input path="salary"/>
      <br> <br>
+     Enter department <form:select path="department" >
+<%--     Если используем МАР для хранеиния списка департаментов--%>
+     <form:options items="${employeeAtribute.mapDepartments}"/>
+
+<%--     Если жестко закрепляем значения:--%>
+<%--     <form:option value="IT" label="Info tchnologi"/>--%>
+<%--     <form:option value="HH" label="Head hunter"/>--%>
+<%--     <form:option value="Sales" label="Sales technologi"/>--%>
+
+ </form:select>
      <input type="submit" value="Ok">
 
 
