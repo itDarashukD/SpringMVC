@@ -40,11 +40,24 @@
     <%--    WV <form:radiobutton path="markAuto" value="WV"/>--%>
     <%--    <br> <br>--%>
     <%--    MB <form:radiobutton path="markAuto" value="MB"/>--%>
-    <%--     Если используем МАР для хранеиния списка авто--%>
+
+        <%--     Если используем МАР для хранеиния списка авто--%>
     <form:radiobuttons path="markAuto" items="${employeeAtribute.mapOfCars}"/>
+    <br><br>
+    What kind of foreign langvich you now?
+    <br>
+<%--    English <form:checkbox path="langviches" value="English"/>--%>
+<%--    <br>--%>
+<%--    Polish  <form:checkbox path="langviches" value="Polish"/>--%>
+<%--    <br>--%>
+<%--    Franch  <form:checkbox path="langviches" value="Franch"/>--%>
+<%--    <br>--%>
 
+
+    <%--     Если используем МАР для хранеиния списка языков--%>
+    <form:checkboxes path="langviches" items="${employeeAtribute.mapLangviches}"/>
+    <br>
     <input type="submit" value="Ok">
-
 
 </form:form>
 

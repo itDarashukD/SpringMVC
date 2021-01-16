@@ -12,17 +12,24 @@ public class Employee {
     private Map<String ,String >mapDepartments;
     private String markAuto;
     private Map<String,String  >mapOfCars;
+    private String[]  langviches;
+    private Map<String ,String >mapLangviches;
 
     public Employee() {
         mapDepartments = new HashMap<>();
-        mapDepartments.put("Informate technologi","IT");
+        mapDepartments.put("Information technology","IT");
         mapDepartments.put("Head hunter","HH");
-        mapDepartments.put("Sales technologi","Sales ");
+        mapDepartments.put("Sales technology","Sales ");
 
         mapOfCars =new HashMap<>();
         mapOfCars.put("BMW","BMW");
         mapOfCars.put("WV","WV");
         mapOfCars.put("MB","MB");
+
+        mapLangviches = new HashMap<>();
+        mapLangviches.put("English","Eng");
+        mapLangviches.put("Polish","Pol");
+        mapLangviches.put("French","Fr");
     }
 
     public Employee(String name, String surname, int salary, String department) {
@@ -30,6 +37,22 @@ public class Employee {
         this.surname = surname;
         this.salary = salary;
         this.department = department;
+    }
+
+    public Map<String, String> getMapLangviches() {
+        return mapLangviches;
+    }
+
+    public void setMapLangviches(Map<String, String> mapLangviches) {
+        this.mapLangviches = mapLangviches;
+    }
+
+    public String[] getLangviches() {
+        return langviches;
+    }
+
+    public void setLangviches(String[] langviches) {
+        this.langviches = langviches;
     }
 
     public Map<String, String> getMapOfCars() {
