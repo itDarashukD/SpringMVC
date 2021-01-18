@@ -25,8 +25,11 @@ your Langvich
     </c:forEach>
 
 </ui>
-
-
+<br>
+Phone number ${employeeAtribute.phoneNumber}
+<br>
+Email ${employeeAtribute.eMail}
+<br>
 <body>
 
 </body>
